@@ -11,7 +11,7 @@ import SwiftUI
 struct Reference_MaterialApp: App {
     var body: some Scene {
         WindowGroup {
-            AsyncImageReference()
+            DragGestureReference()
         }
     }
 }
