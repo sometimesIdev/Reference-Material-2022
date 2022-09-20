@@ -10,6 +10,9 @@ import SwiftUI
 struct DragGestureReference2: View {
     var body: some View {
         ZStack {
+            Rectangle()
+                .background(.green)
+        
             VStack(spacing: 20) {
                 Image(systemName: "chevron.up")
                 Text("Sign up")
@@ -29,13 +32,11 @@ struct DragGestureReference2: View {
                     .font(.headline)
                     .padding()
                     .padding(.horizontal)
-                    .background(Color.black.cornerRadius(10))
+                    .background()
                 Spacer()
             }
-            
-            .background(Color.white)
+            .background()
         }
-        .background(Color.green.ignoresSafeArea())
     }
     
 }
